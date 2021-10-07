@@ -6,6 +6,7 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+@EnableCircuitBreaker
 @EnableEurekaClient //NOTIFICAMOS QUE ES UN CLIENTE DEL SERVIDOR EUREKA.
 @EnableFeignClients //HABILITAMOS EL CLIENTE FEIGN QUE PODAMOS TENER IMPLEMENTADO EN EL PROYECTO. TAMBN PERMITIRÁ INTECTAR AL CLIENTE FEIGN EN OTROS COMPONENTES DEL PROYECTO.
 @SpringBootApplication
