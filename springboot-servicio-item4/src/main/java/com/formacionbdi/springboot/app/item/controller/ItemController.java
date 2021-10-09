@@ -14,7 +14,7 @@ import com.formacionbdi.springboot.app.item.models.service.IItemService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 @RestController
-public class ItemController {
+public class ItemController { 
 
 	@GetMapping("/listar")
 	public List<Item> listar() {
@@ -41,7 +41,7 @@ public class ItemController {
 	}
 
 	@Autowired
-	@Qualifier("serviceRestTemplate")
-	// @Qualifier("serviceRestTemplate")
+	//@Qualifier("serviceRestTemplate")
+	@Qualifier("serviceFeign")
 	private IItemService itemService;
 }
