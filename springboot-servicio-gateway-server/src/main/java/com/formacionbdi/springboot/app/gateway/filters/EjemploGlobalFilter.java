@@ -61,7 +61,7 @@ public class EjemploGlobalFilter implements GlobalFilter, Ordered{
 	@Override
 	public int getOrder() {
 		// TODO Auto-generated method stub
-		return -1;
+		return 1;  //SE CAMBIA A 1 PARA QUE TAMBIÉN PUEDA ESCRIBIR VALORES.            
 	}
 	
 	private final Logger logger = LoggerFactory.getLogger(EjemploGlobalFilter.class);
