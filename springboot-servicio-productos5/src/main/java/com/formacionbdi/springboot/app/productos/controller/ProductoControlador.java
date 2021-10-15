@@ -32,7 +32,7 @@ public class ProductoControlador {
 		//SE LANZA UNA EXCEPTION PARA EFECTOS DE PRUEBA
 		if(id.equals(10L)) throw new IllegalStateException("Producto no encontrado");
 		
-		//SIMULACIÓN DE UNA DEMORA DE 5 SEGUNDOS
+		//SIMULACIÓN DE UNA LLAMADA LENTA. SI SE LLAMA AL ID 7, TENDRÁ UNA DEMORA DE 5 SEGUNDOS
 		if(id.equals(7L)) {
 			try {
 				TimeUnit.SECONDS.sleep(5L);
